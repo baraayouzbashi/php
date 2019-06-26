@@ -49,7 +49,7 @@ if($_GET['place_id']) {
 
 <h3 class="text-danger text-center mb-4">Do you really want to delete this data?</h3>
 
-<form action="actions/a_delete.php" method="post" class="my-2 text-center">
+<form action="actions/place_a_delete.php" method="post" class="my-2 text-center">
               <div class="form-group">
                 
                 <input type="hidden"
