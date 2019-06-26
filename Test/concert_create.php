@@ -58,7 +58,7 @@
                 <label for="exampleInputEmail1"> EventDate:</label>
                 <input type="date"
                 class="form-control"
-                name="Eventdate"
+                name="EventDate"
                 placeholder="Enter EventDate"
                 >
               </div>
