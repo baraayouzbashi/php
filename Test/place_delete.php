@@ -6,10 +6,10 @@ require_once 'actions/db_connect.php';
 if($_GET['place_id']) {
 
     $place_id = $_GET['place_id'];
-    $sql = "SELECT * FROM place WHERE place_id  = {$place_id}";
-    $result = $connect->query($sql);
-    $data = $result->fetch_assoc();
-    $connect->close();
+    // $sql = "SELECT * FROM place WHERE place_id  = {$place_id}";
+    // $result = $connect->query($sql);
+    // $data = $result->fetch_assoc();
+    // $connect->close();
 
 ?>
 <!DOCTYPE html>
@@ -56,7 +56,7 @@ if($_GET['place_id']) {
                 class="form-control"
                 name="place_id"
                 placeholder="Enter id"
-                value="<?php echo $data['place_id'] ?>"
+                value="<?php echo $place_id ?>"
                 >
               </div>
             
