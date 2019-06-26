@@ -46,7 +46,7 @@ if($_POST) {
 
         echo "<h1 class='text-danger text-center'>Succcessfully Updated</h1>";
         echo "<div class=' text-center container'>";
-        echo "<a href='../update.php?Concert_id=".$Concert_id."'><button type='button'class='btn btn-warning mx-1'>Back</button></a>";
+        echo "<a href='../concert_update.php?Concert_id=".$Concert_id."'><button type='button'class='btn btn-warning mx-1'>Back</button></a>";
 
         echo "<a href='../index.php'><button type='button' class='btn btn-warning mx-1'>Home</button></a>";
         echo'</div></body>
