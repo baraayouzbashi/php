@@ -79,7 +79,7 @@ if($_GET['Concert_id']) {
                 <input type="text"
                 class="form-control"
                 name="c_name"
-                placeholder="Enter restaurant name"
+                placeholder="Enter concert name"
                 value="<?php echo $data['c_name'] ?>"
                 >
               </div>
