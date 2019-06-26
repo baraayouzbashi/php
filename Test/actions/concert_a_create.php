@@ -44,7 +44,7 @@ if($_POST) {
         ;
         echo "<h1 class='text-center text-danger'>New Record Successfully Created</h1>";
         echo "<div class=' text-center container'>";
-        echo "<a href='../consert_create.php' style='text-decoration:none'>
+        echo "<a href='../concert_create.php' style='text-decoration:none'>
                 <button type='button' class='btn btn-warning m-1'>
                     Back
                 </button>
