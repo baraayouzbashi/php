@@ -5,7 +5,10 @@ session_start();
 
  
 
-require_once 'db_connect.php';
+// Wrong include path
+// require_once 'db_connect.php';
+include_once 'actions/db_connect.php';
+
 
  
 
