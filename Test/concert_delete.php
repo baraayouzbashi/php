@@ -6,10 +6,10 @@ require_once 'actions/db_connect.php';
 if($_GET['Concert_id']) {
 
     $Concert_id = $_GET['Concert_id'];
-    $sql = "SELECT * FROM concerts WHERE Concert_id  = {$Concert_id}";
-    $result = $connect->query($sql);
-    $data = $result->fetch_assoc();
-    $connect->close();
+    // $sql = "SELECT * FROM concerts WHERE Concert_id  = {$Concert_id}";
+    // $result = $connect->query($sql);
+    // $data = $result->fetch_assoc();
+    // $connect->close();
 
 ?>
 <!DOCTYPE html>
@@ -49,13 +49,14 @@ if($_GET['Concert_id']) {
 
 <h3 class="text-danger text-center mb-4">Do you really want to delete this data?</h3>
 
-<form action="actions/a_delete.php" method="post" class="my-2 text-center">
+<form action="actions/concert_a_delete.php" method="post" class="my-2 text-center">
               <div class="form-group">
                 
                 <input type="hidden"
                 class="form-control"
                 name="Concert_id"
                 placeholder="Enter id"
+                value="<?php echo $Concert_id ?>"
                 >
               </div>
             
