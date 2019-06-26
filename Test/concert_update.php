@@ -16,7 +16,7 @@ if($_GET['Concert_id']) {
 
     $Concert_id = $_GET['Concert_id'];
 
-    $sql = "SELECT * FROM concerts WHERE Concert_id = 1";
+    $sql = "SELECT * FROM concerts WHERE Concert_id = ". $Concert_id;
 
     $result = $connect->query($sql);
 
