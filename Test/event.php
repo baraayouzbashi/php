@@ -1,7 +1,8 @@
 <?php require_once 'actions/db_connect.php'; ?>
 
  <?php
-
+ob_start();
+session_start();
 
 if( !isset($_SESSION['user']) ) {
  header("Location: start.php");
