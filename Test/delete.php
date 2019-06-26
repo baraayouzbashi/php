@@ -6,10 +6,10 @@ require_once 'actions/db_connect.php';
 if($_GET['restaurant_id']) {
 
     $restaurant_id = $_GET['restaurant_id'];
-    $sql = "SELECT * FROM restaurant WHERE restaurant_id  = {$restaurant_id}";
-    $result = $connect->query($sql);
-    $data = $result->fetch_assoc();
-    $connect->close();
+    // $sql = "SELECT * FROM restaurant WHERE restaurant_id  = {$restaurant_id}";
+    // $result = $connect->query($sql);
+    // $data = $result->fetch_assoc();
+    // $connect->close();
 
 ?>
 <!DOCTYPE html>
@@ -56,7 +56,7 @@ if($_GET['restaurant_id']) {
                 class="form-control"
                 name="restaurant_id"
                 placeholder="Enter id"
-                value="<?php echo $data['restaurant_id'] ?>"
+                value="<?php echo $restaurant_id ?>"
                 >
               </div>
             

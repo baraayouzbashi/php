@@ -3,9 +3,9 @@ require_once 'db_connect.php';
 
 if($_POST) {
 
-    $location_id= $_POST['location_id'];
+    $restaurant_id= $_POST['restaurant_id'];
 
-    $sql = "DELETE FROM location WHERE location_id = {$location_id}";
+    $sql = "DELETE FROM restaurant WHERE restaurant_id = {$restaurant_id}";
 
     if($connect->query($sql) === TRUE) {
     	echo'<html>
