@@ -78,7 +78,7 @@ if($_GET['restaurant_id']) {
 <div class="container">
   
 
-    <form action="actions/a_update.php" method="post" class="my-2">
+    <form action="actions/restaurant_a_update.php" method="post" class="my-2">
               <div class="form-group">
                 <label for="exampleInputEmail1">restaurant name:</label>
                 <input type="text"

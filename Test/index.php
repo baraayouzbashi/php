@@ -132,10 +132,10 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
                   
                   <div class="d-flex justify-content-between align-items-center my-3">
                     <div class="btn-group">
-                <a href="update.php?restaurant_id='.$row['restaurant_id'].'">
+                <a href="restaurant_update.php?restaurant_id='.$row['restaurant_id'].'">
                       <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                       </a>
-                      <a href="delete.php?restaurant_id='.$row['restaurant_id'].'">
+                      <a href="restaurant_delete.php?restaurant_id='.$row['restaurant_id'].'">
                       <button type="button" class="btn btn-sm btn-outline-secondary">delete</button></a>
                     </div>
                     <small class="text-muted">9 mins</small>
